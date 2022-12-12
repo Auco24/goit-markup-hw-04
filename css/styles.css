@@ -420,6 +420,14 @@ margin-bottom: 12px;
   background-color: #404bbf;
 }
 
+.main-button:hover,
+.main-button:focus {
+  color: var(--alternative-color);
+  background-color: var(--color-studio);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
 .button {
   padding: 12px 24px;
   border-radius: 4px;
@@ -512,11 +520,13 @@ margin-bottom: 12px;
 }
 
 
-.our-team ul {
+.our-list  {
   display: flex;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  gap: 24px;
+  
 }
 
 
@@ -524,6 +534,7 @@ margin-bottom: 12px;
   padding-bottom: 32px;
   background-color: var(--bacground-color-text);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .rubric {
@@ -577,10 +588,17 @@ margin-bottom: 12px;
   justify-content: space-between;
 }
 
- .example-work:hover,
- .example-work:active {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+
+.link-port:hover,
+.link-port:active {
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+   0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+
+
+
 
 .ours-works > li {
   margin-bottom: 48px;
@@ -679,9 +697,10 @@ img {
 
 .person-list {
   display: flex;
+  justify-content: center;
   padding-left: 16px;
   padding-right: 16px;
-  gap: 24px;
+  
 }
 
 .person-list > li {
@@ -794,6 +813,20 @@ color: #2E2F42;
   fill: var(--color-studio);
 }
 
+.href-customer > a {
+  color: rgb(142, 143, 153);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(142, 143, 153);
+  border-image: initial;
+  border-radius: 4px;
+}
+
 .ico {
   width: 64px;
   height: 64px;
@@ -818,4 +851,9 @@ color: #2E2F42;
   height: 112px;
   border-radius: 4px;
   background-color: #f4f4fd;
+}
+
+.footer-container {
+display: flex;
+align-items: baseline;
 }
